@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".etudInfo">
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/blueshap"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="Profil de "/>
+
+            <TextView
+                android:id="@+id/prenomprof"
+                android:layout_toRightOf="@id/prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="Bouhlal"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <TextView
+
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/imageView2"
+        android:id="@+id/nom"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Bouhlal"
+    android:layout_alignStart="@id/prenom"
+        android:layout_alignEnd="@id/imageView2"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_toEndOf="@id/nomm"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <TextView
+
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/imageView2"
+        android:id="@+id/nomm"
+android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom :"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="264dp" />
+
+
+
+    <TextView
+        android:layout_below="@id/nom"
+        android:id="@+id/prenom"
+        android:layout_alignEnd="@id/imageView2"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:text="El Mahdi"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@id/prenomm"
+        android:layout_width="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <TextView
+        android:layout_below="@id/nom"
+        android:id="@+id/prenomm"
+android:layout_marginLeft="100dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Prenom : "
+        android:layout_width="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="305dp" />
+
+
+    <TextView
+        android:id="@+id/cin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/imageView2"
+        android:layout_below="@id/prenom"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+
+        android:layout_alignStart="@id/prenom"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/cinn"
+
+        android:text="WA297911"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <TextView
+        android:layout_below="@id/prenom"
+        android:id="@+id/cinn"
+        android:layout_marginLeft="100dp"
+
+        android:layout_height="wrap_content"
+        android:text="CIN : "
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="353dp" />
+
+
+    <TextView
+        android:layout_below="@id/cin"
+        android:id="@+id/niv"
+
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/imageView2"
+        android:layout_width="wrap_content"
+
+        android:textAlignment="textStart"
+        android:text="INE1"
+        android:layout_alignStart="@id/prenom"
+        android:textColor="@color/blue"
+        android:layout_toEndOf="@id/cinn"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <TextView
+        android:layout_below="@id/cin"
+        android:id="@+id/nivv"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+
+        android:text="Niveau : "
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="405dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/tel"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/fil"
+
+
+       android:layout_alignStart="@id/prenom"
+        android:layout_toEndOf="@id/fill"
+
+        android:text="0611442255"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@id/tel"
+        android:layout_alignStart="@id/prenom"
+        android:layout_toEndOf="@id/fill"
+        android:text="email@ga.com"
+        android:layout_marginTop="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="448dp" />
+
+
+
+
+    <TextView
+        android:layout_below="@id/niv"
+        android:id="@+id/fil"
+        android:textSize="20sp"
+       android:layout_alignStart="@id/prenom"
+        android:layout_toEndOf="@id/fill"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:text="ASEDS"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:layout_alignEnd="@id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="448dp" />
+
+
+
+
+
+    <TextView
+        android:layout_below="@id/niv"
+        android:id="@+id/fill"
+        android:layout_marginLeft="100dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Filiere :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+        android:layout_below="@id/fill"
+        android:id="@+id/tell"
+        android:layout_marginLeft="100dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Tel :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+        android:layout_below="@id/tell"
+        android:id="@+id/emaill"
+        android:layout_marginLeft="100dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="E-mail :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="448dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="194dp"
+        android:textSize="25sp"
+        android:layout_height="194dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:id="@+id/modifier"
+            android:background="@drawable/btn"
+            android:layout_marginRight="5dp"
+            android:text="Modifer"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:id="@+id/supprimer"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rmvbtn"
+            android:text="Supprimer"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

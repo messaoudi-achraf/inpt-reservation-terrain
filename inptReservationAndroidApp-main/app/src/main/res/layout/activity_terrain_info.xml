@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerrainInfoActivity">
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/blueshap"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="Info de "/>
+
+            <TextView
+                android:id="@+id/idTerFoq"
+                android:layout_toRightOf="@id/prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:text="F1"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView
+
+            android:layout_marginTop="40dp"
+            android:id="@+id/idterr"
+            android:layout_marginLeft="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="F1"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:layout_toEndOf="@id/idter"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="264dp" />
+
+        <TextView
+
+            android:layout_marginTop="40dp"
+
+            android:id="@+id/idter"
+            android:layout_marginLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Terrain :"
+            android:textSize="20sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="264dp" />
+
+
+
+        <TextView
+            android:layout_below="@id/idterr"
+            android:id="@+id/sport"
+android:layout_alignStart="@id/idterr"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:text="Football"
+
+            android:layout_toEndOf="@id/sportt"
+            android:layout_width="wrap_content"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="305dp" />
+
+        <TextView
+            android:layout_below="@id/idter"
+            android:id="@+id/sportt"
+            android:layout_marginLeft="0dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Sport : "
+            android:layout_width="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="305dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:id="@+id/modifier"
+            android:background="@drawable/btn"
+            android:layout_marginRight="5dp"
+            android:text="Modifer"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:id="@+id/supprimer"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rmvbtn"
+            android:text="Supprimer"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
