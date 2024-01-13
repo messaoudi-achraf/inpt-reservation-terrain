@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
             if (log.getText().toString().isEmpty() || pass.getText().toString().isEmpty() ){
-                err.setText(" enter shy qalwa!");
+                err.setText(" enter smthg!");
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
